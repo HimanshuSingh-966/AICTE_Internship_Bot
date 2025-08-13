@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-AICTE Internship Bot - Updated for AJAX Endpoint and Telegram 'Apply' Button
-Monitors AICTE internship postings and sends Telegram notifications with direct apply links
-"""
-
 import os
 import json
 import time
