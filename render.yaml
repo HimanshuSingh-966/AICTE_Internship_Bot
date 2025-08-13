@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: aicte-internship-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python aicte_internship_bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: CHECK_INTERVAL_HOURS
+        value: "1"
+      - key: AICTE_URL
+        value: "https://internship.aicte-india.org/recentlyposted.php"
+      - key: RENDER
+        value: "true"
+      - key: PORT
+        value: "10000"
