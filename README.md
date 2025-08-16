@@ -15,7 +15,7 @@ An automated internship monitoring bot that scrapes **AICTE** and **Internshala*
 
 ## 📋 Prerequisites
 
-- Python 3.8+
+- Python 3.9+
 - Telegram Bot Token
 - Telegram Chat ID
 
@@ -23,8 +23,8 @@ An automated internship monitoring bot that scrapes **AICTE** and **Internshala*
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd internship-bot
+git clone https://github.com/HimanshuSingh-966/InternBeacon.git
+cd InternBeacon
 ```
 
 ### 2. Install Dependencies
@@ -42,12 +42,12 @@ TELEGRAM_CHAT_ID=your_chat_id_here
 # Optional (defaults provided)
 ENABLE_AICTE=true
 ENABLE_INTERNSHALA=true
-CHECK_INTERVAL_HOURS=1
+CHECK_INTERVAL_HOURS=2
 ```
 
 ### 4. Run the Bot
 ```bash
-python bot.py
+python main.py
 ```
 
 ## 🔑 Getting Telegram Credentials
@@ -84,8 +84,7 @@ Edit the `preferred_domains` list in `bot.py` to customize your interests:
 ```python
 self.preferred_domains = [
     'data science', 'machine learning', 'artificial intelligence', 
-    'ai', 'ml', 'data analyst', 'ai/ml', 'python', 'analytics', 
-    'deep learning'
+    'ai', 'ml', 'data analyst', 'ai/ml'
 ]
 ```
 
@@ -108,6 +107,9 @@ self.preferred_domains = [
    TELEGRAM_BOT_TOKEN=your_bot_token
    TELEGRAM_CHAT_ID=your_chat_id
    RENDER=true
+   ENABLE_AICTE=true
+   ENABLE_INTERNSHALA=true
+   CHECK_INTERVAL_HOURS=2
    ```
 
 4. **Deploy**: Render will automatically use the `render.yaml` configuration
