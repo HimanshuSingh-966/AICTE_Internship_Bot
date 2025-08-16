@@ -178,7 +178,7 @@ self.preferred_domains = [
 ### File Structure
 ```
 internship-bot/
-├── bot.py                 # Main application
+├── main.py                 # Main application
 ├── requirements.txt       # Python dependencies
 ├── render.yaml           # Render deployment config
 ├── README.md             # This file
@@ -195,10 +195,10 @@ internship-bot/
 pip install -r requirements.txt
 
 # Run with debug logging
-python bot.py
+python main.py
 
 # Check logs
-tail -f bot.log
+tail -f main.log
 ```
 
 ### Adding New Platforms
@@ -235,7 +235,7 @@ This bot is for educational and personal use only. Please respect the terms of s
 
 - **Issues**: Open a GitHub issue
 - **Questions**: Check existing issues or create a new one
-- **Logs**: Include `bot.log` contents when reporting issues
+- **Logs**: Include `main.log` contents when reporting issues
 
 ## 🚀 Roadmap
 
