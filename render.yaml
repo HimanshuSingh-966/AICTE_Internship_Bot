@@ -1,19 +1,22 @@
 services:
   - type: web
-    name: aicte-internship-bot
+    name: dual-platform-internship-bot
     env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python aicte_internship_bot.py
+    autoDeploy: false
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         sync: false
       - key: TELEGRAM_CHAT_ID
         sync: false
+      - key: ENABLE_AICTE
+        value: "true"
+      - key: ENABLE_INTERNSHALA
+        value: "true"
       - key: CHECK_INTERVAL_HOURS
         value: "1"
-      - key: AICTE_URL
-        value: "https://internship.aicte-india.org/recentlyposted.php"
       - key: RENDER
         value: "true"
       - key: PORT
