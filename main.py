@@ -493,7 +493,7 @@ class DualPlatformInternshipBot:
             }
             requests.post(url, json=data, timeout=30)
         except Exception as e:
-            logger.error(f"❌ Error sending summary: {e}")
+            logger.error(f"Error sending summary: {e}")
     
     def run_check(self):
         """Main function to check for internships across AICTE and Internshala"""
