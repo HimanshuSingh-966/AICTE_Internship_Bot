@@ -19,7 +19,7 @@ from urllib.parse import urljoin, quote
 # Load environment variables
 load_dotenv()
 
-# Configure logging
+# Configure loggings
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
